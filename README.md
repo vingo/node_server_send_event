@@ -1,5 +1,5 @@
 # node_server_send_event
-front-end  communication with node
+front-end  communication with node  sse usage!
 
 
 #1. start node server
