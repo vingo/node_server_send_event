@@ -57,17 +57,3 @@ app.get('/test/sse', function(req, res, next) {
             }
         }, 1000);
 });
-
-
-var p = function(id, name) {
-    this.id = id || 0;
-    this.name = name || '';
-    this.init = function() {}
-};
-var p1 = new p();
-
-function a(id, name) {
-    var args = Array.prototype.slice.call(arguments, 0);
-    p.apply(null, args);
-    console.log(args, 'after:', p1)
-}
